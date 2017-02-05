@@ -6,7 +6,7 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
     
-    <title>Cycli</title>
+    <title>Blissy</title>
     <meta charset="utf-8">
     <meta name="MobileOptimized" content="320">
     <meta name ="HandheldFriendly" content="true">
@@ -15,81 +15,12 @@
     
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="assets/js/materialize.min.js"></script>
-    <script src="https://use.fontawesome.com/4e256c6574.js"></script>
+    <script src="assets/js/js.js"></script>
     
-   
-    
-    <script>
-    $( document ).ready(function() {
-        /*$('.head-set-one').delay(2000).fadeIn(3000, function () {});
-        $('.head-set-two').delay(4000).fadeIn(3000, function () {});
-        $('video').delay(0).fadeTo(0,1, function () {
-            $(this).delay(13000).fadeTo(5000,1);
-        });*/
-
-        /*Materialize rdy stuff*/
-        $('.scrollspy').scrollSpy({
-            scrollOffset: -100
-        });
-        $('.modal').modal();
-        $('.tooltipped').tooltip({delay: 50});
-        $(".nav-open").sideNav();
-             
-    });
-        
-        
-    $(window).on("load",function() {
-        $(window).scroll(function() {
-            
-        var scrollTop = $(window).scrollTop();
-        var height = $(window).height();
-            
-        $('#vid-head').css({
-            'opacity': ((height - scrollTop) / height)
-        });
-            
-        var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fade").each(function() {
-              /* Check the location of each desired element */
-              var objectBottom = $(this).offset().top + ($(this).outerHeight() * 0);
-
-              /* If the element is completely within bounds of the window, fade it in */
-              if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-                if ($(this).css("opacity")==0) {$(this).fadeTo(700,1);}
-              } else { //object goes out of view (scrolling up)
-                if ($(this).css("opacity")==1) {$(this).fadeTo(700,0);}
-              }
-            });
-        }).scroll(); //invoke scroll-handler on page-load
-    });
-        
-    </script>
     
 </head>
 <body>
-
-<div class="material-menu-wrapper">
-    <div class="material-menu">
-        <div class="material-btn">
-            <div class="material-hamburger">
-            <div class="material-patty"></div>
-            <div class="material-patty"></div>
-            <div class="material-patty"></div>
-            </div>
-        </div>
-        <div class="material-content">
-            <div class="nav">
-                <ul>
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Opret bruger</a></li>
-                    <li><a href="">Hjælp</a></li>
-                    <li><a href="">Se priser</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-    
+ 
 <main>
     
 <section class="section scrollspy" id="one">
@@ -102,45 +33,76 @@
     Your browser does not support the video tag.
     </video>
 </section>  
-<section class="section scrollspy indigo darken-1" id="two">
-    <div class="container">
-        <div class="row">
-            <p class="flow-text white-text center">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis tortor, fringilla malesuada gravida in, commodo at lacus. Quisque dapibus ligula ut ornare finibus. Sed a bibendum ante.
-            </p>
-        </div>
-        <div class="row">
-            <div class="obj-center">
-                <a href="#" class="btn btn-large waves-effect waves-light pink darken-2 white-text hoverable">
-                    Kom let igang
-                </a>
+    
+<!--Above the fold    /\ -->
+<!--Belove the fold   \/-->
+<div class="content-wrapper">  
+
+    <section class="section scrollspy indigo darken-1" id="two">
+        
+            <div class="row">
+                <div class="fixed-action-btn vertical right">
+                    <a class="btn-floating btn-large blue-grey darken-2">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="pages/login.html" class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="Login">
+                                <i class="material-icons">person</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages/login.html" class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="Opret bruger">
+                                <i class="material-icons">person_add</i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pages/login.html" class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="Opret bruger">
+                                <i class="material-icons">help</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="section scrollspy white" id="three">
-    <div class="container">
-        <div class="row">
-            <div class="col s12 m6 l9">
-                <h2>
-                    Hvordan virker det?
-                </h2>
-                <p class="flow-text">
-Nullam iaculis aliquam felis. Etiam sit amet accumsan elit, a pulvinar augue. Vestibulum ultricies, velit id auctor congue, ante eros accumsan enim, vel porta libero orci vitae velit. Ut a feugiat enim, sit amet ullamcorper nibh. Nulla nec congue eros. Duis tristique diam orci, ultricies cursus nisl vehicula vitae. Phasellus consectetur euismod odio eget fringilla.  
+        
+        <div class="container">
+            
+            <div class="row">
+                <p class="flow-text white-text center">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis tortor, fringilla malesuada gravida in, commodo at lacus. Quisque dapibus ligula ut ornare finibus. Sed a bibendum ante.
                 </p>
-                <a href="#" class="btn btn-large waves-effect waves-light indigo lighten-1 white-text hoverable">Læs mere om Blissy</a>
             </div>
-            <div class="col s12 m6 l3 right hide-on-med-and-down">
-                <img src="assets/materials/img/iPhone-with-bg.png">
+            <div class="row">
+                <div class="obj-center">
+                    <a href="#" class="btn btn-large waves-effect waves-light pink darken-2 white-text hoverable">
+                        Kom let igang
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     
-<script type="text/javascript">
-var circle = document.querySelector('.material-btn');var link = document.querySelector('.material-content').querySelectorAll('li');var ham = document.querySelector('.material-hamburger');var main = document.querySelector('main');var win = window;function openMenu(event) {   circle.classList.toggle('active');  ham.classList.toggle('material-close');  main.classList.toggle('active');  for (var i = 0; i < link.length; i++) {    link[i].classList.toggle('active');  }  event.preventDefault();  event.stopImmediatePropagation();}function closeMenu() {  if (circle.classList.contains('active')) {    circle.classList.remove('active');    for (var i = 0; i < link.length; i++) {      link[i].classList.toggle('active');    }    ham.classList.remove('material-close');    main.classList.remove('active');  }}circle.addEventListener('click', openMenu, false);win.addEventListener('click', closeMenu, false);
-</script>
+    <section class="section scrollspy white" id="three">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l9">
+                    <h2>
+                        Hvordan virker det?
+                    </h2>
+                    <p class="flow-text">
+    Nullam iaculis aliquam felis. Etiam sit amet accumsan elit, a pulvinar augue. Vestibulum ultricies, velit id auctor congue, ante eros accumsan enim, vel porta libero orci vitae velit. Ut a feugiat enim, sit amet ullamcorper nibh. Nulla nec congue eros. Duis tristique diam orci, ultricies cursus nisl vehicula vitae. Phasellus consectetur euismod odio eget fringilla.  
+                    </p>
+                    <a href="pages/login.html" class="btn btn-large waves-effect waves-light indigo lighten-1 white-text hoverable">Læs mere om Blissy</a>
+                </div>
+                <div class="col s12 m6 l3 right hide-on-med-and-down">
+                    <img src="assets/materials/img/iPhone-with-bg.png">
+                </div>
+            </div>
+        </div>
+    </section>
     
+</div>
 </main>
+   
 </body>
 </html>
