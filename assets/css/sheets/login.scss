@@ -1,32 +1,9 @@
-.arrow_back  {
-    position: absolute;
-    top: 5vh;
-    left: 5vw;
-    color: #000;
-    ul {
-        
-        &:hover {
-            li {
-                color: #fff;
-                cursor: pointer;
-                &:first-child {
-                    left:-29px;
-                }
-            }
-        }
-        li {
-            display: inline;
-            font-size: 22px;
-            transition: all 0.2s;
-            &:first-child {
-                position: absolute;
-                left:-23px;
-                top: 3px;
-            }
-        }
-    }
+.login-body {
+.btn-floating {
+    left:48vw;
+    top:85vh;
 }
-
+}
 .box {
    position: relative;
    top: 0;

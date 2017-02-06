@@ -11,21 +11,27 @@
         });
         $('.modal').modal();
         $('.tooltipped').tooltip({delay: 50});
-        $(".nav-open").sideNav();
-             
+        $('.button-collapse').sideNav({
+            menuWidth: 50, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+          }
+        );
+
     });
-        
-        
+
+
     $(window).on("load",function() {
         $(window).scroll(function() {
-            
+
         var scrollTop = $(window).scrollTop();
         var height = $(window).height();
-            
+
         $('#vid-head').css({
             'opacity': ((height - scrollTop) / height)
         });
-            
+
         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
             $(".fade").each(function() {
               /* Check the location of each desired element */
